@@ -109,8 +109,6 @@ body {
   transform: scale(1.05);
 }
 
-/* SIMPLE PAGES */
-
 .simple-page {
   flex: 1;
   display: flex;
