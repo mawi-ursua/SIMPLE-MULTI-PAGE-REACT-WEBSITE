@@ -6,14 +6,10 @@
   box-sizing: border-box;
 }
 
-/* BODY */
-
 body {
   background-color: #d6d0d0;
   font-family: 'Poppins', sans-serif;
 }
-
-/* MAIN CONTAINER */
 
 .container {
   width: 95%;
@@ -25,8 +21,6 @@ body {
   justify-content: space-between;
   overflow: hidden;
 }
-
-/* NAVBAR */
 
 .navbar {
   display: flex;
@@ -62,8 +56,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* HOME PAGE */
-
 .hero {
   flex: 1;
   display: flex;
@@ -86,7 +78,7 @@ body {
 }
 
 .hero-text h2 {
-  font-size: 38px;
+  font-size: 30px;
   line-height: 1.5;
   font-weight: 700;
   color: black;
@@ -148,12 +140,10 @@ body {
   color: black;
 }
 
-/* FOOTER */
-
 footer {
   background-color: #f5bcc8;
   text-align: right;
   padding: 18px 40px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
 }
