@@ -1,32 +1,9 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
-function Home() {
-  return (
-    <div className="page">
-      <h1>Home Page</h1>
-      <p>Welcome to the Home Page.</p>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div className="page">
-      <h1>About Page</h1>
-      <p>This is the About Page.</p>
-    </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div className="page">
-      <h1>Contact Page</h1>
-      <p>This is the Contact Page.</p>
-    </div>
-  );
-}
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -34,18 +11,28 @@ function App() {
       <div className="container">
 
         <nav className="navbar">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+
+          <div className="logo">
+            <h3>MAWIN</h3>
+          </div>
+
+          <div className="nav-links">
+            <Link to="/">HOME</Link>
+            <Link to="/about">ABOUT</Link>
+            <Link to="/contact">CONTACT</Link>
+          </div>
+
         </nav>
 
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <footer>
+          WWW.MAUREENJANEURSUA.COM
+        </footer>
 
       </div>
     </BrowserRouter>
