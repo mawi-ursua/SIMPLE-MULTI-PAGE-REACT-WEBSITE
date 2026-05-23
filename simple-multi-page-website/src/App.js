@@ -30,10 +30,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
-        <footer>
-          WWW.MAUREENJANEURSUA.COM
-        </footer>
-
       </div>
     </BrowserRouter>
   );
